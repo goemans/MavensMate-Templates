@@ -1,7 +1,7 @@
 public class {{ api_name }} implements TestFixtureBuilder {
 
-	public final String CHANGE_ME = 'CHANGE_ME';
-
+	public static final TestObjScenario CHANGE_ME = new TestObjScenario({{ api_name }}.class, 'CHANGE_ME');
+	
 	private final String FIXTURE_QUERY_CLASS = '{{ object_name }}';
 	private final String FIXTURE_QUERY_FIELDS = 'Name';		// TODO Add more fields as needed for the class
 
