@@ -212,7 +212,7 @@
             "author":"Dan Goemans",
             "params":[  
                 {  
-                    "name":"camelcase_name",
+                    "name":"api_name",
                     "description":"Camel case name for the object to be built (e.g. PaymentMethod)",
                     "default":"MyTestObj"
                 },

@@ -1,4 +1,4 @@
-public class Test{{ camelcase_name }}Builder implements TestFixtureBuilder {
+public class Test{{ api_name }}Builder implements TestFixtureBuilder {
 
 	public final String DEFAULT = 'DEFAULT';
 
@@ -26,7 +26,7 @@ public class Test{{ camelcase_name }}Builder implements TestFixtureBuilder {
 
 	private {{ object_name }} buildDefault() {
 		{{ object_name }} obj = new {{ object_name }}();
-    	obj.Name = 'Default {{ camelcase_name }}';
+    	obj.Name = 'Default {{ api_name }}';
     	return obj;
 	}
 }
