@@ -206,6 +206,24 @@
             ]
         },
         {  
+            "name":"TestFixtureBuilder",
+            "file_name":"TestFixtureBuilder.cls",
+            "description":"RoundCorner skeleton for test fixtures",
+            "author":"Dan Goemans",
+            "params":[  
+                {  
+                    "name":"camelcase_name",
+                    "description":"Camel case name for the object to be built (e.g. PaymentMethod)",
+                    "default":"MyTestObj"
+                },
+                {  
+                    "name":"object_name",
+                    "description":"API name of the Standard or Custom Object to be built",
+                    "default":"My_Test_Obj__c"
+                }
+            ]
+        },
+        {  
             "name":"Trigger Handler",
             "file_name":"TriggerHandler.cls",
             "description":"An Interface that handles Trigger actions",
