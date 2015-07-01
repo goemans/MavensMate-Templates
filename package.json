@@ -213,13 +213,13 @@
             "params":[  
                 {  
                     "name":"api_name",
-                    "description":"Camel case name for the object to be built (e.g. PaymentMethod)",
-                    "default":"MyTestObj"
+                    "description":"Name for the Builder class",
+                    "default":"TestPaymentMethodBuilder"
                 },
                 {  
                     "name":"object_name",
                     "description":"API name of the Standard or Custom Object to be built",
-                    "default":"My_Test_Obj__c"
+                    "default":"Payment_Method__c"
                 }
             ]
         },
