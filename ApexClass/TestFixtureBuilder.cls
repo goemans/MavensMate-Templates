@@ -26,7 +26,7 @@ public class {{ api_name }} implements TestFixtureBuilder {
 
 	private {{ object_name }} buildDefault() {
 		{{ object_name }} obj = new {{ object_name }}();
-    	obj.Name = 'Sample {{ object_name }}';
+    	// obj.Name = 'Sample {{ object_name }}';
     	return obj;
 	}
 }
