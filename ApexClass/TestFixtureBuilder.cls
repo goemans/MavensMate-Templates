@@ -1,13 +1,13 @@
 public class {{ api_name }} implements TestFixtureBuilder {
 
-	public static final TestObjScenario CHANGE_ME = new TestObjScenario({{ api_name }}.class, 'CHANGE_ME');
+	public static final TestObjScenario DEFAULT_OBJ = new TestObjScenario({{ api_name }}.class, 'DEFAULT_OBJ');
 	
 	private final String FIXTURE_QUERY_CLASS = '{{ object_name }}';
 	private final String FIXTURE_QUERY_FIELDS = 'Name';		// TODO Add more fields as needed for the class
 
 	public SObject build(TestObjScenario scenario) {
 		// Add instance scenarios here as needed for test cases
-		return scenario.equals(CHANGE_ME) ? buildSample()
+		return scenario.equals(DEFAULT_OBJ) ? buildDefault()
 			: TestScenario.unknown(scenario);
 	}
 
@@ -24,7 +24,7 @@ public class {{ api_name }} implements TestFixtureBuilder {
 		return FIXTURE_QUERY_CLASS;
 	}
 
-	private {{ object_name }} buildSample() {
+	private {{ object_name }} buildDefault() {
 		{{ object_name }} obj = new {{ object_name }}();
     	obj.Name = 'Sample {{ object_name }}';
     	return obj;
