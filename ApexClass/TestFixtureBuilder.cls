@@ -6,7 +6,7 @@ public class {{ api_name }} implements TestFixtureBuilder {
 
 	public SObject build(TestObjScenario scenario) {
 		// Add instance scenarios here as needed for test cases
-		return scenario.equals(DEFAULT_OBJ) ? buildDefault()
+		return scenario.rootEquals(DEFAULT_OBJ) ? buildDefault()
 			: TestScenario.unknown(scenario);
 	}
 
